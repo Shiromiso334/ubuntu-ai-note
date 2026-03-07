@@ -1,0 +1,31 @@
+---
+import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="このブログについて"
+	description="Ubuntu×AI実践ノートについての紹介ページです"
+	pubDate={new Date('2026-03-08')}
+	heroImage={AboutHeroImage}
+>
+	<p>
+		「Ubuntu×AI実践ノート」は、UbuntuとClaude Codeを中心に、AI作業環境の構築と実践を記録するブログです。
+		インストール手順から日常的な使い方まで、試行錯誤した内容をそのまままとめています。
+	</p>
+
+	<p>
+		このブログが特に役に立つのは、こんな方です。
+	</p>
+	<ul>
+		<li>Ubuntuを導入したばかりで、何から始めればいいかわからない</li>
+		<li>AIツールを使って作業効率を上げたい</li>
+		<li>副業や個人開発の環境をUbuntu上で整えたい</li>
+	</ul>
+
+	<p>
+		難しい前提知識は必要ありません。
+		実際に手を動かしながら確認した手順を、できるだけ平易な言葉で書いています。
+		同じ環境を目指している方の参考になれば幸いです。
+	</p>
+</Layout>
