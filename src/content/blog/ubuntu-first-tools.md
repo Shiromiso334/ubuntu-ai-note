@@ -56,3 +56,4 @@ Ubuntu導入直後に揃えておくツールは、`curl`・`git`・`build-essen
 
 - [UbuntuにClaude Codeを導入してAI作業環境を整える手順](/blog/ubuntu-claude-code-setup)
 - [Claude Codeを使う前に決めておくべき作業ルール](/blog/claude-code-work-rules)
+- [AI作業環境を整えるときにパスワード管理を先に決めた方がいい理由](/blog/password-management-for-ai-tools)

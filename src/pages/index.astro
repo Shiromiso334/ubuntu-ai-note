@@ -16,12 +16,26 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			<h1>{SITE_TITLE}</h1>
 			<p class="description">{SITE_DESCRIPTION}</p>
 
-			<section class="featured">
-				<p class="featured-label">最初に読む記事</p>
-				<a href="/blog/ubuntu-claude-code-setup" class="featured-link">
-					UbuntuにClaude Codeを導入してAI作業環境を整える手順
-				</a>
-				<p class="featured-desc">UbuntuへのClaude Codeのインストールから初期設定まで、つまずきポイントも含めて手順をまとめた記事です。</p>
+			<section class="articles">
+				<h2 class="articles-heading">おすすめ記事</h2>
+				<ul class="article-list">
+					<li>
+						<a href="/blog/ubuntu-claude-code-setup">UbuntuにClaude Codeを導入してAI作業環境を整える手順</a>
+						<p>インストールからAPIキーの設定まで、つまずきポイントも含めて手順をまとめた記事です。</p>
+					</li>
+					<li>
+						<a href="/blog/ubuntu-first-tools">Ubuntu導入後に最初に入れておくと便利なツール</a>
+						<p>curl・git・build-essentialなど、最初に揃えておくと作業が楽になるツールを紹介しています。</p>
+					</li>
+					<li>
+						<a href="/blog/claude-code-work-rules">Claude Codeを使う前に決めておくべき作業ルール</a>
+						<p>何を任せるか・どう依頼するかなど、使い始める前に決めておきたい方針をまとめた記事です。</p>
+					</li>
+					<li>
+						<a href="/blog/password-management-for-ai-tools">AI作業環境を整えるときにパスワード管理を先に決めた方がいい理由</a>
+						<p>AIサービスを使い始めるとアカウントが増えやすいため、管理方法を早めに決めておく重要性を整理しています。</p>
+					</li>
+				</ul>
 			</section>
 
 			<nav class="top-links">
@@ -50,30 +64,39 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		color: rgb(var(--gray));
 		margin-bottom: 2em;
 	}
-	.featured {
+	.articles {
 		margin-bottom: 2.5em;
-		padding: 1.25em 1.5em;
-		border: 1px solid rgb(var(--gray-light));
-		border-radius: 6px;
 		text-align: left;
 	}
-	.featured-label {
-		font-size: 0.8em;
+	.articles-heading {
+		font-size: 1em;
 		color: rgb(var(--gray));
-		margin: 0 0 0.4em;
+		margin-bottom: 0.75em;
 	}
-	.featured-link {
+	.article-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75em;
+	}
+	.article-list li {
+		padding: 1em 1.25em;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 6px;
+	}
+	.article-list a {
 		display: block;
-		font-size: 1.05em;
 		font-weight: bold;
 		text-decoration: none;
 		color: var(--accent);
-		margin-bottom: 0.5em;
+		margin-bottom: 0.3em;
 	}
-	.featured-link:hover {
+	.article-list a:hover {
 		text-decoration: underline;
 	}
-	.featured-desc {
+	.article-list p {
 		font-size: 0.9em;
 		color: rgb(var(--gray));
 		margin: 0;
