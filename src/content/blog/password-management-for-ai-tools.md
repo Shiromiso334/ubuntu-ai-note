@@ -2,6 +2,7 @@
 title: 'AI作業環境を整えるときにパスワード管理を先に決めた方がいい理由'
 description: 'Claude Codeや各種AIサービスを使う前に、パスワード管理の方針を決めておく重要性を整理した記事'
 pubDate: '2026-03-08'
+sortOrder: 6
 tags: ["AI作業環境", "パスワード管理", "1Password"]
 ---
 

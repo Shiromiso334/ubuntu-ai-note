@@ -2,6 +2,7 @@
 title: 'Ubuntu導入後に最初に入れておくと便利なツール'
 description: 'Ubuntuを導入した後、最初に入れておくと作業しやすい基本ツールをまとめた記事'
 pubDate: '2026-03-08'
+sortOrder: 2
 tags: ["Ubuntu", "ツール", "初期設定"]
 ---
 

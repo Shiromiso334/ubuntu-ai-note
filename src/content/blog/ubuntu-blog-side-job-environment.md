@@ -2,6 +2,7 @@
 title: 'Ubuntuでブログ副業の作業環境を整えるときに考えること'
 description: 'Ubuntu上でブログ運営や副業向けの作業環境を整える際に意識したい考え方を整理した記事'
 pubDate: '2026-03-08'
+sortOrder: 5
 tags: ["Ubuntu", "ブログ副業", "作業環境"]
 ---
 

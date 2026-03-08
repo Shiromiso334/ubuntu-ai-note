@@ -2,6 +2,7 @@
 title: 'UbuntuにClaude Codeを導入してAI作業環境を整える手順'
 description: 'UbuntuにClaude Codeを導入し、AI作業環境を整えるまでの手順をまとめた記事'
 pubDate: '2026-03-08'
+sortOrder: 1
 tags: ["Ubuntu", "Claude Code", "AI作業環境"]
 ---
 

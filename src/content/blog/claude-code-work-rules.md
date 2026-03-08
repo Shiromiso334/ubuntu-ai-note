@@ -2,6 +2,7 @@
 title: 'Claude Codeを使う前に決めておくべき作業ルール'
 description: 'Claude Codeを使い始める前に決めておくと作業が安定しやすい基本ルールをまとめた記事'
 pubDate: '2026-03-08'
+sortOrder: 3
 tags: ["Claude Code", "作業ルール", "AI作業環境"]
 ---
 

@@ -2,6 +2,7 @@
 title: 'Claude Codeでどこまで自動化できるか'
 description: 'Claude Codeで任せやすい作業と人が判断すべき作業の境界を初心者向けに整理した記事'
 pubDate: '2026-03-08'
+sortOrder: 4
 tags: ["Claude Code", "自動化", "AI作業環境"]
 ---
 
