@@ -52,6 +52,32 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+			/* コピーボタン */
+			.prose pre {
+				position: relative;
+			}
+			.copy-btn {
+				position: absolute;
+				top: 0.5em;
+				right: 0.5em;
+				background: rgba(255, 255, 255, 0.12);
+				color: #ddd;
+				border: 1px solid rgba(255, 255, 255, 0.25);
+				border-radius: 4px;
+				padding: 0.2em 0.65em;
+				font-size: 0.75em;
+				cursor: pointer;
+				transition: background 0.15s;
+				white-space: nowrap;
+			}
+			.copy-btn:hover {
+				background: rgba(255, 255, 255, 0.22);
+				color: #fff;
+			}
+			.copy-btn.copied {
+				color: #7ecf7e;
+				border-color: rgba(126, 207, 126, 0.4);
+			}
 		</style>
 	</head>
 
@@ -84,3 +110,39 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Footer />
 	</body>
 </html>
+
+<script>
+  // コードブロックにコピーボタンを追加する
+  document.querySelectorAll('.prose pre').forEach((pre) => {
+    const btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.textContent = 'コピー';
+
+    btn.addEventListener('click', async () => {
+      const code = pre.querySelector('code');
+      const text = (code ?? pre).textContent ?? '';
+
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.textContent = 'コピーしました';
+        btn.classList.add('copied');
+      } catch {
+        // クリップボードAPIが使えない場合はテキストを選択状態にする
+        const range = document.createRange();
+        range.selectNodeContents(code ?? pre);
+        const sel = window.getSelection();
+        sel?.removeAllRanges();
+        sel?.addRange(range);
+        btn.textContent = '選択しました';
+        btn.classList.add('copied');
+      }
+
+      setTimeout(() => {
+        btn.textContent = 'コピー';
+        btn.classList.remove('copied');
+      }, 2000);
+    });
+
+    pre.appendChild(btn);
+  });
+</script>
