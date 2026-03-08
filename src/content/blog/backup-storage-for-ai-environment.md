@@ -59,3 +59,4 @@ AI作業環境を育てていくほど、手元のデータには価値が出て
 - [外付けSSDを選ぶときに初心者が見ておきたいポイント](/blog/ssd-selection-guide)
 - [Ubuntu導入後に最初に入れておくと便利なツール](/blog/ubuntu-first-tools)
 - [Ubuntuでブログ副業の作業環境を整えるときに考えること](/blog/ubuntu-blog-side-job-environment)
+- [Ubuntu環境でブログ副収入を目指すときに役立ったもの](/blog/ubuntu-blog-useful-items)

@@ -1,0 +1,94 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+
+const posts = await getCollection('blog');
+
+const tagMap = new Map<string, number>();
+for (const post of posts) {
+	for (const tag of post.data.tags ?? []) {
+		tagMap.set(tag, (tagMap.get(tag) ?? 0) + 1);
+	}
+}
+const tags = [...tagMap.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ja'));
+---
+
+<!doctype html>
+<html lang="ja">
+	<head>
+		<BaseHead title="タグ一覧 | Ubuntu×AI実践ノート" description="記事のタグ一覧ページです。タグから関連記事を探せます。" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>タグ一覧</h1>
+			<p class="description">タグをクリックすると、関連する記事の一覧を表示します。</p>
+			<ul class="tag-list">
+				{tags.map(([tag, count]) => (
+					<li>
+						<a href={`/tags/${encodeURIComponent(tag)}/`}>
+							{tag}
+							<span class="count">{count}</span>
+						</a>
+					</li>
+				))}
+			</ul>
+			<nav class="back-link">
+				<a href="/blog">← ブログ記事一覧へ</a>
+			</nav>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		max-width: 720px;
+		margin: 4em auto;
+		padding: 0 1em;
+	}
+	h1 {
+		font-size: 1.6em;
+		margin-bottom: 0.5em;
+	}
+	.description {
+		color: rgb(var(--gray));
+		margin-bottom: 2em;
+	}
+	.tag-list {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 2em;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75em;
+	}
+	.tag-list a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4em;
+		padding: 0.4em 0.9em;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 20px;
+		text-decoration: none;
+		color: var(--black);
+		font-size: 0.95em;
+	}
+	.tag-list a:hover {
+		background: rgb(var(--gray-light));
+	}
+	.count {
+		font-size: 0.8em;
+		color: rgb(var(--gray));
+	}
+	.back-link a {
+		text-decoration: none;
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+	}
+	.back-link a:hover {
+		color: var(--accent);
+	}
+</style>
