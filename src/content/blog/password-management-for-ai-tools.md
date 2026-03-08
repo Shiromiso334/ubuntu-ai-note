@@ -58,4 +58,5 @@ AI作業環境の構築はツールの設定だけでなく、アカウント管
 ## あわせて読みたい
 
 - [Claude Codeを使う前に決めておくべき作業ルール](/blog/claude-code-work-rules)
-- [UbuntuにClaude Codeを導入してAI作業環境を整える手順](/blog/ubuntu-claude-code-setup)
+- [AI作業環境でバックアップ用ストレージを用意しておくと安心な理由](/blog/backup-storage-for-ai-environment)
+- [Ubuntuでブログ副業の作業環境を整えるときに考えること](/blog/ubuntu-blog-side-job-environment)
