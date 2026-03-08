@@ -57,6 +57,6 @@ AI作業環境の構築はツールの設定だけでなく、アカウント管
 
 ## あわせて読みたい
 
+- [パスワード管理ツールを選ぶときに初心者が考えたいこと](/blog/password-manager-selection-guide)
 - [Claude Codeを使う前に決めておくべき作業ルール](/blog/claude-code-work-rules)
 - [AI作業環境でバックアップ用ストレージを用意しておくと安心な理由](/blog/backup-storage-for-ai-environment)
-- [Ubuntuでブログ副業の作業環境を整えるときに考えること](/blog/ubuntu-blog-side-job-environment)

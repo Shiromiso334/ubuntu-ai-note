@@ -54,6 +54,6 @@ AI作業環境を育てていくほど、手元のデータには価値が出て
 
 ## あわせて読みたい
 
+- [外付けSSDを選ぶときに初心者が見ておきたいポイント](/blog/ssd-selection-guide)
 - [Ubuntu導入後に最初に入れておくと便利なツール](/blog/ubuntu-first-tools)
 - [Ubuntuでブログ副業の作業環境を整えるときに考えること](/blog/ubuntu-blog-side-job-environment)
-- [AI作業環境を整えるときにパスワード管理を先に決めた方がいい理由](/blog/password-management-for-ai-tools)
