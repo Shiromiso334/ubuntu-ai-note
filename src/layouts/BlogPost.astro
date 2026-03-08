@@ -52,31 +52,40 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
-			/* コピーボタン */
-			.prose pre {
+			/* コピーボタン：ラッパーで横スクロールと分離 */
+			.code-wrapper {
 				position: relative;
+			}
+			.code-wrapper pre {
+				margin: 0;
 			}
 			.copy-btn {
 				position: absolute;
-				top: 0.5em;
-				right: 0.5em;
-				background: rgba(255, 255, 255, 0.12);
-				color: #ddd;
-				border: 1px solid rgba(255, 255, 255, 0.25);
+				top: 0.4em;
+				right: 0.4em;
+				z-index: 1;
+				background: rgba(255, 255, 255, 0.14);
+				color: #ccc;
+				border: 1px solid rgba(255, 255, 255, 0.28);
 				border-radius: 4px;
-				padding: 0.2em 0.65em;
-				font-size: 0.75em;
+				padding: 0.3em 0.75em;
+				font-size: 0.78em;
+				min-width: 4.5em;
+				text-align: center;
 				cursor: pointer;
-				transition: background 0.15s;
+				transition: background 0.15s, color 0.15s;
 				white-space: nowrap;
+				/* タッチデバイスで押しやすいサイズを確保 */
+				min-height: 2em;
+				line-height: 1.4;
 			}
 			.copy-btn:hover {
-				background: rgba(255, 255, 255, 0.22);
+				background: rgba(255, 255, 255, 0.24);
 				color: #fff;
 			}
 			.copy-btn.copied {
 				color: #7ecf7e;
-				border-color: rgba(126, 207, 126, 0.4);
+				border-color: rgba(126, 207, 126, 0.45);
 			}
 		</style>
 	</head>
@@ -112,11 +121,18 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 </html>
 
 <script>
-  // コードブロックにコピーボタンを追加する
+  // コードブロックをラッパーで包み、ボタンをラッパーに付ける
+  // → pre の横スクロールと分離し、ボタンを常に右上に固定する
   document.querySelectorAll('.prose pre').forEach((pre) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'code-wrapper';
+    pre.parentNode?.insertBefore(wrapper, pre);
+    wrapper.appendChild(pre);
+
     const btn = document.createElement('button');
     btn.className = 'copy-btn';
     btn.textContent = 'コピー';
+    btn.setAttribute('aria-label', 'コードをコピー');
 
     btn.addEventListener('click', async () => {
       const code = pre.querySelector('code');
@@ -143,6 +159,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       }, 2000);
     });
 
-    pre.appendChild(btn);
+    wrapper.appendChild(btn);
   });
 </script>
