@@ -49,6 +49,7 @@ sudo apt install -y curl git build-essential
 Ubuntu導入直後に揃えておくツールは、`curl`・`git`・`build-essential` の3つから始めれば十分です。
 作業が増えてきたら `htop`・`ripgrep`・`fd-find`・`tmux` なども必要に応じて追加していきましょう。
 大切なのは一度に全部揃えようとせず、自分の作業ペースに合わせて少しずつ環境を整えていくことです。
+なお、ソフトウェアとは別に、作業データを守るための物理的なバックアップ手段（外付けSSDなど）も早めに用意しておくと安心です。詳しくは[こちらの記事](/blog/backup-storage-for-ai-environment)で整理しています。
 
 ---
 
