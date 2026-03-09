@@ -235,32 +235,51 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	}
 	@media (max-width: 720px) {
 		main {
-			margin: 2em auto;
+			margin: 1.5em auto;
+			padding: 0 0.85em;
 		}
 		h1 {
-			font-size: 1.4em;
+			font-size: 1.35em;
 		}
 		.description {
+			font-size: 0.9em;
 			margin-bottom: 1.5em;
 		}
 		.purpose {
 			margin-bottom: 2em;
 		}
 		.purpose-list > li {
-			padding: 0.75em 1em;
+			padding: 0.75em 0.9em;
 		}
 		.purpose-label {
 			font-size: 0.9em;
+			margin-bottom: 0.5em;
+		}
+		.purpose-links {
+			gap: 0.1em;
 		}
 		.purpose-links a {
-			font-size: 0.88em;
+			display: block;
+			font-size: 0.87em;
 			line-height: 1.5;
+			padding: 0.2em 0;
 		}
 		.articles {
 			margin-bottom: 2em;
 		}
+		.article-list {
+			gap: 0.6em;
+		}
 		.article-list li {
-			padding: 0.85em 1em;
+			padding: 0.8em 0.9em;
+		}
+		.article-list a {
+			font-size: 0.93em;
+			line-height: 1.4;
+		}
+		.article-list p {
+			font-size: 0.85em;
+			margin-top: 0.3em;
 		}
 		.top-links {
 			align-items: stretch;
@@ -268,7 +287,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		.top-links a {
 			width: auto;
 			text-align: center;
-			padding: 0.6em 1em;
+			padding: 0.65em 1em;
 		}
 	}
 </style>

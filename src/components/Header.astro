@@ -6,6 +6,11 @@ import HeaderLink from './HeaderLink.astro';
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 		<div class="internal-links">
 			<HeaderLink href="/">ホーム</HeaderLink>
 			<HeaderLink href="/blog">ブログ</HeaderLink>
@@ -15,6 +20,7 @@ import HeaderLink from './HeaderLink.astro';
 		</div>
 	</nav>
 </header>
+
 <style>
 	header {
 		margin: 0;
@@ -26,7 +32,6 @@ import HeaderLink from './HeaderLink.astro';
 		margin: 0;
 		font-size: 1em;
 	}
-
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
@@ -46,13 +51,68 @@ import HeaderLink from './HeaderLink.astro';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	.social-links,
-	.social-links a {
-		display: flex;
+	/* ハンバーガーボタン：PCでは非表示 */
+	.nav-toggle {
+		display: none;
 	}
+
 	@media (max-width: 720px) {
-		.social-links {
+		nav {
+			flex-wrap: wrap;
+			padding: 0.4em 0;
+		}
+		h2 {
+			padding: 0.4em 0;
+		}
+		/* ハンバーガーボタン */
+		.nav-toggle {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 26px;
+			height: 18px;
+			background: none;
+			border: none;
+			cursor: pointer;
+			padding: 0;
+			flex-shrink: 0;
+		}
+		.nav-toggle span {
+			display: block;
+			height: 2px;
+			background: rgb(var(--gray-dark));
+			border-radius: 2px;
+		}
+		/* ナビリンク：閉じた状態では非表示 */
+		.internal-links {
 			display: none;
+			width: 100%;
+			flex-direction: column;
+			border-top: 1px solid rgb(var(--gray-light));
+			padding: 0.25em 0 0.5em;
+		}
+		/* JSで .open が付与されたら表示 */
+		.internal-links.open {
+			display: flex;
+		}
+		.internal-links a {
+			padding: 0.65em 0.25em;
+			border-bottom: 1px solid rgb(var(--gray-light));
+			font-size: 0.95em;
+			width: 100%;
+		}
+		.internal-links a:last-child {
+			border-bottom: none;
 		}
 	}
 </style>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.internal-links');
+  toggle?.addEventListener('click', () => {
+    const isOpen = links?.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(!!isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+  });
+</script>
