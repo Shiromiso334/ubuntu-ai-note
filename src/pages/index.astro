@@ -16,6 +16,47 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			<h1>{SITE_TITLE}</h1>
 			<p class="description">{SITE_DESCRIPTION}</p>
 
+			<section class="purpose">
+				<h2 class="purpose-heading">目的から探す</h2>
+				<ul class="purpose-list">
+					<li>
+						<span class="purpose-label">Claude Codeを導入したい</span>
+						<ul class="purpose-links">
+							<li><a href="/blog/ubuntu-claude-code-setup">UbuntuにClaude Codeを導入してAI作業環境を整える手順</a></li>
+							<li><a href="/blog/claude-code-work-rules">Claude Codeを使う前に決めておくべき作業ルール</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="purpose-label">Ubuntu導入後に何をすればいいか知りたい</span>
+						<ul class="purpose-links">
+							<li><a href="/blog/ubuntu-first-tools">Ubuntu導入後に最初に入れておくと便利なツール</a></li>
+							<li><a href="/blog/ubuntu-blog-side-job-environment">Ubuntuでブログ副業の作業環境を整えるときに考えること</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="purpose-label">副収入やブログ運営の流れを知りたい</span>
+						<ul class="purpose-links">
+							<li><a href="/blog/ubuntu-blog-side-income-basics">Ubuntuとブログで副収入を目指すときに最初に知っておきたいこと</a></li>
+							<li><a href="/blog/ubuntu-blog-useful-items">Ubuntu環境でブログ副収入を目指すときに役立ったもの</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="purpose-label">パスワード管理を見直したい</span>
+						<ul class="purpose-links">
+							<li><a href="/blog/password-management-for-ai-tools">AI作業環境を整えるときにパスワード管理を先に決めた方がいい理由</a></li>
+							<li><a href="/blog/password-manager-selection-guide">パスワード管理ツールを選ぶときに初心者が考えたいこと</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="purpose-label">バックアップ環境を整えたい</span>
+						<ul class="purpose-links">
+							<li><a href="/blog/backup-storage-for-ai-environment">AI作業環境でバックアップ用ストレージを用意しておくと安心な理由</a></li>
+							<li><a href="/blog/ssd-selection-guide">外付けSSDを選ぶときに初心者が見ておきたいポイント</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
 			<section class="articles">
 				<h2 class="articles-heading">おすすめ記事</h2>
 				<ul class="article-list">
@@ -91,6 +132,51 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	.description {
 		color: rgb(var(--gray));
 		margin-bottom: 2em;
+	}
+	.purpose {
+		margin-bottom: 2.5em;
+		text-align: left;
+	}
+	.purpose-heading {
+		font-size: 1em;
+		color: rgb(var(--gray));
+		margin-bottom: 0.75em;
+	}
+	.purpose-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.6em;
+	}
+	.purpose-list > li {
+		padding: 0.85em 1.25em;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 6px;
+	}
+	.purpose-label {
+		display: block;
+		font-weight: bold;
+		font-size: 0.95em;
+		color: rgb(var(--gray-dark));
+		margin-bottom: 0.45em;
+	}
+	.purpose-links {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25em;
+	}
+	.purpose-links a {
+		font-size: 0.9em;
+		color: var(--accent);
+		text-decoration: none;
+	}
+	.purpose-links a:hover {
+		text-decoration: underline;
 	}
 	.articles {
 		margin-bottom: 2.5em;
