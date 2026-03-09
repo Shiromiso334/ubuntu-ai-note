@@ -45,9 +45,11 @@ const tags = [...tagMap.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ja')
 
 <style>
 	main {
+		width: 100%;
 		max-width: 720px;
 		margin: 4em auto;
 		padding: 0 1em;
+		box-sizing: border-box;
 	}
 	h1 {
 		font-size: 1.6em;
@@ -90,5 +92,20 @@ const tags = [...tagMap.entries()].sort((a, b) => a[0].localeCompare(b[0], 'ja')
 	}
 	.back-link a:hover {
 		color: var(--accent);
+	}
+	@media (max-width: 720px) {
+		main {
+			margin: 1.5em auto;
+		}
+		h1 {
+			font-size: 1.3em;
+		}
+		.tag-list {
+			gap: 0.55em;
+		}
+		.tag-list a {
+			font-size: 0.9em;
+			padding: 0.35em 0.75em;
+		}
 	}
 </style>

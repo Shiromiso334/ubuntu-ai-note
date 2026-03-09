@@ -120,9 +120,11 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 <style>
 	main {
+		width: 100%;
 		max-width: 720px;
 		margin: 4em auto;
 		padding: 0 1em;
+		box-sizing: border-box;
 		text-align: center;
 	}
 	h1 {
@@ -206,6 +208,8 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		text-decoration: none;
 		color: var(--accent);
 		margin-bottom: 0.3em;
+		overflow-wrap: break-word;
+		word-break: break-word;
 	}
 	.article-list a:hover {
 		text-decoration: underline;

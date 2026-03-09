@@ -55,9 +55,11 @@ const { tag, posts } = Astro.props;
 
 <style>
 	main {
+		width: 100%;
 		max-width: 720px;
 		margin: 4em auto;
 		padding: 0 1em;
+		box-sizing: border-box;
 	}
 	.back a {
 		text-decoration: none;
@@ -88,6 +90,9 @@ const { tag, posts } = Astro.props;
 		padding: 1em 1.25em;
 		border: 1px solid rgb(var(--gray-light));
 		border-radius: 6px;
+		min-width: 0;
+		overflow-wrap: break-word;
+		word-break: break-word;
 	}
 	.article-list a {
 		display: block;
@@ -95,6 +100,8 @@ const { tag, posts } = Astro.props;
 		text-decoration: none;
 		color: var(--accent);
 		margin-bottom: 0.3em;
+		overflow-wrap: break-word;
+		word-break: break-word;
 	}
 	.article-list a:hover {
 		text-decoration: underline;
@@ -103,5 +110,22 @@ const { tag, posts } = Astro.props;
 		font-size: 0.9em;
 		color: rgb(var(--gray));
 		margin: 0;
+		overflow-wrap: break-word;
+	}
+	@media (max-width: 720px) {
+		main {
+			margin: 1.5em auto;
+		}
+		h1 {
+			font-size: 1.25em;
+			word-break: break-word;
+		}
+		.article-list li {
+			padding: 0.8em 0.9em;
+		}
+		.article-list a {
+			font-size: 0.92em;
+			line-height: 1.4;
+		}
 	}
 </style>
