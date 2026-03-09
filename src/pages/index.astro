@@ -233,4 +233,42 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	.top-links a:hover {
 		background: rgb(var(--gray-light));
 	}
+	@media (max-width: 720px) {
+		main {
+			margin: 2em auto;
+		}
+		h1 {
+			font-size: 1.4em;
+		}
+		.description {
+			margin-bottom: 1.5em;
+		}
+		.purpose {
+			margin-bottom: 2em;
+		}
+		.purpose-list > li {
+			padding: 0.75em 1em;
+		}
+		.purpose-label {
+			font-size: 0.9em;
+		}
+		.purpose-links a {
+			font-size: 0.88em;
+			line-height: 1.5;
+		}
+		.articles {
+			margin-bottom: 2em;
+		}
+		.article-list li {
+			padding: 0.85em 1em;
+		}
+		.top-links {
+			align-items: stretch;
+		}
+		.top-links a {
+			width: auto;
+			text-align: center;
+			padding: 0.6em 1em;
+		}
+	}
 </style>
