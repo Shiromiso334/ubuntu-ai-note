@@ -12,6 +12,19 @@
 - 誇張表現は避ける
 - 初心者向けに分かりやすく書く
 - 実体験ベースで違和感のない文章を優先する
+- 文体は「です・ます調」で統一する
+- ブログ全体の文体・人格の一貫性を優先すること
+- 勝手に文体を変えないこと
+
+## 執筆時の参照ファイル
+
+記事を執筆・編集する際は、必ず以下のファイルを参照すること。
+
+- `docs/author-persona.md` — 執筆者の人格・価値観・読者への向き合い方
+- `docs/writing-style.md` — 文体ルール・語尾バリエーション・構成の基本
+- `docs/article-template.md` — 記事テンプレート（フロントマター〜締めまで）
+
+記事生成後は `docs/ai-writing-fixes.md` を使って品質チェックとリライトを行うこと。
 
 ## 固定ページ運用
 
@@ -28,6 +41,19 @@
 
 - 最小限を優先する
 - 大きなレイアウト変更は勝手に行わない
+
+## コンテンツ管理フロー
+
+制作管理は `docs/editorial/` 以下のファイルで行う。
+
+- `docs/editorial/content-index.md` — 全コンテンツの正本一覧（状態管理）
+- `docs/editorial/status-board.md` — 作業優先度ダッシュボード
+- `docs/editorial/workflow.md` — チャット役割分担・運用ルール定義
+- `docs/editorial/migration-log.md` — 移行・統合・修正の履歴
+- `docs/editorial/topic-map.md` — SEO構造・テーマ一覧
+
+下書きは `content/drafts/`、最終稿は `content/final/` に保存すること。
+新規コンテンツ作成・状態変更のたびに `content-index.md` を更新すること。
 
 ## 作業時の注意
 
