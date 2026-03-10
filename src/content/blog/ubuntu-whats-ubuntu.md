@@ -2,6 +2,7 @@
 title: "Ubuntuとは？Windowsとの違いを初心者向けにわかりやすく解説"
 description: "UbuntuとWindowsの違い、メリット・デメリット、向いている人を初心者向けに解説。OSを自分で選んだことがない方でも読み進められるよう、実体験をもとにまとめました。"
 pubDate: "2026-03-10"
+sortOrder: -2
 tags: ["Ubuntu", "Ubuntu入門", "Linux", "Windows", "OS"]
 ---
 

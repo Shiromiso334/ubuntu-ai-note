@@ -172,3 +172,5 @@ Claude Codeの導入はNode.jsのインストール、Claude Codeのインスト
 - [Claude Codeでどこまで自動化できるか](/blog/claude-code-automation-limits)
 - [Ubuntu導入後に最初に入れておくと便利なツール](/blog/ubuntu-first-tools)
 - [AI作業環境を整えるときにパスワード管理を先に決めた方がいい理由](/blog/password-management-for-ai-tools)
+- [Ubuntuとは？Windowsとの違いを初心者向けにわかりやすく解説](/blog/ubuntu-whats-ubuntu)
+- [UbuntuのUSBブートメディアを作る方法：balenaEtcherで10分で完成](/blog/ubuntu-usb-bootmedia)

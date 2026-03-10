@@ -57,3 +57,4 @@ Ubuntu導入直後に揃えておくツールは、`curl`・`git`・`build-essen
 - [AI作業環境でバックアップ用ストレージを用意しておくと安心な理由](/blog/backup-storage-for-ai-environment)
 - [Ubuntuでブログ副業の作業環境を整えるときに考えること](/blog/ubuntu-blog-side-job-environment)
 - [AI作業環境を整えるときにパスワード管理を先に決めた方がいい理由](/blog/password-management-for-ai-tools)
+- [Ubuntuインストール前の準備：スペック確認からバックアップまで](/blog/ubuntu-install-prep)

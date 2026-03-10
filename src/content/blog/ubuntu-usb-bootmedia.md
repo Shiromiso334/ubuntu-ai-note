@@ -2,6 +2,7 @@
 title: "UbuntuのUSBブートメディアを作る方法：balenaEtcherで10分で完成"
 description: "UbuntuのUSBブートメディアをbalenaEtcherで作る手順を画像つきで解説。RufusとbalenaEtcherで迷った実体験をもとに、初心者が選ぶべきソフトと理由もあわせて紹介します。"
 pubDate: "2026-03-10"
+sortOrder: 0
 tags: ["Ubuntu", "USBブートメディア", "balenaEtcher", "インストール準備", "初心者"]
 ---
 
