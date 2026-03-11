@@ -144,6 +144,48 @@ src/content/blog/   # Astroブログに反映済みの記事
 
 ---
 
+## Cloudflare Pages 運用メモ（2026-03-11）
+
+### 何が起きたか
+
+昨日まで公開できていたサイトが、今回の push 後に 404 になった。
+
+**原因の構造**
+
+| 段階 | 状況 |
+|------|------|
+| ① 初期構築時 | Cloudflare に「Worker」または不明な形式でプロジェクトを作成した |
+| ② 昨日まで | `npx wrangler deploy` が偶然成功 or 別の配信経路で公開されていた |
+| ③ 今回の破綻 | Astro static build（`dist/`出力）に対し `wrangler deploy` が Worker変換しようとして失敗 |
+| ④ `pages.dev` URL が存在しない | 正規の Cloudflare Pages プロジェクトとして作られていなかった証拠 |
+
+### なぜ Cloudflare Pages に切り替えるのが正しいか
+
+- このサイトは静的 Astro ビルド（`npm run build` → `dist/`）
+- 静的ファイルの配信には **Cloudflare Pages** が正しい選択
+- Cloudflare Workers は SSR・API・動的処理向けで、このサイトには不要
+- Pages は `dist/` をそのまま CDN に乗せるだけで動く。追加設定不要
+
+### 正しい Cloudflare Pages 設定値
+
+```
+Framework preset    : Astro
+Build command       : npm run build
+Build output dir    : dist
+Deploy command      : （空欄）
+Production branch   : main
+```
+
+**Deploy command は必ず空欄にすること。** `npx wrangler deploy` を入れると必ず失敗する。
+
+### 今後の注意
+
+- Cloudflare 側を変更した場合は、必ずこのメモを更新する
+- push だけで自動デプロイされる構成。管理画面での手動操作は不要
+- `astro.config.mjs` の `site` は `https://www.ubuntu-ai-note.com` で設定済み（変更しない）
+
+---
+
 ## 参照ドキュメント一覧
 
 | ファイル | 用途 |
