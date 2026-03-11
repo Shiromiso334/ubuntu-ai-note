@@ -33,6 +33,64 @@
 - `docs/editorial/topic-map.md` を新設
 - `workflow.md` にID管理ルールを追記
 
+## 2026-03-12
+
+### Codex と Claude Code の連携運用に切り替え
+
+- **対象**: プロジェクト全体
+- **状態**: 会話中心運用 → task / log 中心運用
+- **元データ**: 現行の `CLAUDE.md`、`docs/editorial/` 配下、運用方針メモ
+- **備考**: `PROJECT_CONTEXT.md`、`docs/editorial/task-template.md`、`tasks/`、`logs/` を追加し、Codex が整理、Claude Code が実行、人間が承認する流れを明文化
+
+### Ubuntu 側の task 自動実行基盤を追加
+
+- **対象**: プロジェクト全体
+- **状態**: 手動 task 実行のみ → 定期実行 / 手動実行 / 承認待ち対応あり
+- **元データ**: `tasks/` 運用方針、Ubuntu 常駐実行の要件
+- **備考**: `scripts/task-runner.sh`、`scripts/task-approval.sh`、`scripts/task-notify.sh`、`systemd/` 雛形、Telegram 通知対応を追加
+
+### Claude 利用制限時のクールダウン再試行を追加
+
+- **対象**: `scripts/task-runner.sh`
+- **状態**: 制限到達時は一律 failed → `rate_limited` として一定時間後に再試行
+- **元データ**: Claude Code の短時間制限に関する運用要件
+- **備考**: `RATE_LIMIT_COOLDOWN_HOURS=5` を既定値として追加
+
+### 人間確認後のブログ公開スクリプトを追加
+
+- **対象**: ブログ公開フロー
+- **状態**: 人間確認後も手動で複数操作 → `publish-blog.sh` で build / commit / push を一括実行
+- **元データ**: 人間確認後はブログのみ自動反映したいという運用要件
+- **備考**: X と note は対象外。ブログ記事のみローカルスクリプトで反映
+
+### 人間確認待ちの Telegram 通知を追加
+
+- **対象**: `scripts/task-runner.sh`
+- **状態**: task 完了通知のみ → Human 担当・人間確認待ちコンテンツも通知
+- **元データ**: B016 のようなレビュー待ち状態を Telegram で知りたいという要件
+- **備考**: `tasks/notify/` に通知履歴を保存し、同じ内容の重複通知を避ける
+
+### ブログ公開時の派生作業を自動化
+
+- **対象**: `scripts/publish-blog.mjs`
+- **状態**: ブログ反映のみ → トップページ導線更新と X 告知 task 起票も実施
+- **元データ**: ブログ公開時にトップページ掲載調整と X 投稿文作成も進めたいという要件
+- **備考**: X 投稿は作成・人間確認待ちまで自動、実投稿は人間が実施
+
+### B017〜B020 の構成案と台帳登録を追加
+
+- **対象**: B017, B018, B019, B020
+- **状態**: 未登録 → 構成案作成・台帳登録済み
+- **元データ**: Ubuntu入門シリーズの続きとトピックマップのギャップ
+- **備考**: 初回セットアップ、日本語入力、ターミナル基本、メリット・デメリットの4本を先行登録
+
+### Search Console 重複URL対策の手順を追加
+
+- **対象**: Cloudflare 運用メモ
+- **状態**: robots/sitemap のみ確認 → host 正規化ルールの設定値も文書化
+- **元データ**: `http` / `https`、`www` ありなしの重複URL状況
+- **備考**: `docs/editorial/cloudflare-redirect-rules.md` を追加
+
 ---
 
 ## ログの書き方テンプレート

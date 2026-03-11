@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.ubuntu-ai-note.com/sitemap-index.xml
