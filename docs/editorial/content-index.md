@@ -12,7 +12,8 @@
 | B012 | Ubuntuとは？Windowsとの違いを初心者向けにわかりやすく解説 | ブログ | 下書き | ubuntu-whats-ubuntu | src/content/blog/ubuntu-whats-ubuntu.md | 2026-03-10 | Ubuntu入門シリーズ第1回 |
 | B013 | Ubuntuインストール前の準備：スペック確認からバックアップまで | ブログ | 下書き | ubuntu-install-prep | src/content/blog/ubuntu-install-prep.md | 2026-03-10 | Ubuntu入門シリーズ第2回 |
 | B014 | UbuntuのUSBブートメディアを作る方法：balenaEtcherで10分で完成 | ブログ | 下書き | ubuntu-usb-bootmedia | src/content/blog/ubuntu-usb-bootmedia.md | 2026-03-10 | Ubuntu入門シリーズ第3回 |
-| B015 | UbuntuインストールのためのBIOS設定：USB起動に切り替える手順 | ブログ | 公開済み | ubuntu-bios-usb-boot | src/content/blog/ubuntu-bios-usb-boot.md | 2026-03-11 | Ubuntu入門シリーズ第4回 |
+| B015 | UbuntuインストールのためのBIOS設定：USB起動に切り替える手順 | ブログ | 公開済み | ubuntu-bios-usb-boot | src/content/blog/ubuntu-bios-usb-boot.md | 2026-03-11 | Ubuntu入門シリーズ第4回 / X002投稿済み |
+| B016 | Ubuntuのインストール手順：インストール画面で迷わないための完全ガイド | ブログ | 案出し | ubuntu-install-guide | src/content/blog/ubuntu-install-guide.md（予定） | 未定 | Ubuntu入門シリーズ第5回 / 構成案: content/drafts/blog/B016-ubuntu-install-guide.md |
 | B001 | UbuntuにClaude Codeを導入してAI作業環境を整える手順 | ブログ | 公開準備完了 | ubuntu-claude-code-setup | src/content/blog/ubuntu-claude-code-setup.md | 2026-03-08 | 導入記事・重要 |
 | B002 | Ubuntu導入後に最初に入れておくと便利なツール | ブログ | 公開準備完了 | ubuntu-first-tools | src/content/blog/ubuntu-first-tools.md | 2026-03-08 | 初心者向け入門 |
 | B003 | Claude Codeを使う前に決めておくべき作業ルール | ブログ | 公開準備完了 | claude-code-work-rules | src/content/blog/claude-code-work-rules.md | 2026-03-08 | Claude Code運用系 |
@@ -32,7 +33,7 @@
 | ID | 内容（概要） | 状態 | 用途 | 元ファイル | 投稿日 | 備考 |
 |----|------------|------|------|-----------|--------|------|
 | X001 | （例）記事告知ツイート | 案出し | ブログ記事告知 | — | — | テンプレート登録待ち |
-| X002 | B015告知：BIOSが怖い…構成＋ロードマップスレッド | 公開準備完了 | ブログ記事告知 | content/drafts/x/X002-bios-usb-boot-announce.md | — | メイン投稿＋スレッド返信の2本組 |
+| X002 | B015告知：BIOSが怖い…構成＋ロードマップスレッド | 公開済み | ブログ記事告知 | content/drafts/x/X002-bios-usb-boot-announce.md | 2026-03-11 | 詳細: docs/editorial/x-post-log.md |
 
 ---
 
