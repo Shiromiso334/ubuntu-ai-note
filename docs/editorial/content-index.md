@@ -14,7 +14,7 @@
 | B014 | UbuntuのUSBブートメディアを作る方法：balenaEtcherで10分で完成 | ブログ | 下書き | Claude Code | 監査前チェックと整形 | ubuntu-usb-bootmedia | src/content/blog/ubuntu-usb-bootmedia.md | 2026-03-10 | Ubuntu入門シリーズ第3回 |
 | B015 | UbuntuインストールのためのBIOS設定：USB起動に切り替える手順 | ブログ | 公開済み | Human | アーカイブ管理のみ | ubuntu-bios-usb-boot | src/content/blog/ubuntu-bios-usb-boot.md | 2026-03-11 | Ubuntu入門シリーズ第4回 / X002投稿済み |
 | B016 | Ubuntuのインストール手順：インストール画面で迷わないための完全ガイド | ブログ | 公開済み | Human | アーカイブ管理のみ | ubuntu-install-guide | src/content/blog/ubuntu-install-guide.md | 2026-03-12 | Ubuntu入門シリーズ第5回 / 下書き: content/drafts/blog/B016-ubuntu-install-guide.md / レビュー修正完了(260312) / 公開反映済み(2026-03-12) |
-| B017 | Ubuntuインストール直後に最初に確認したい初回セットアップ項目 | ブログ | 修正待ち | Human | 人間確認待ち（公開前最終確認） | ubuntu-first-setup | src/content/blog/ubuntu-first-setup.md（予定） | 未定 | Ubuntu入門シリーズ第6回 / 下書き: content/drafts/blog/B017-ubuntu-first-setup.md |
+| B017 | Ubuntuインストール直後に最初に確認したい初回セットアップ項目 | ブログ | 公開済み | Human | アーカイブ管理のみ | ubuntu-first-setup | src/content/blog/ubuntu-first-setup.md | 2026-03-14 | Ubuntu入門シリーズ第6回 / 下書き: content/drafts/blog/B017-ubuntu-first-setup.md / 公開反映済み(2026-03-14) |
 | B018 | Ubuntuで日本語入力を使う方法：最初に確認したい設定を初心者向けに解説 | ブログ | 修正待ち | Human | 人間確認待ち（公開前最終確認） | ubuntu-japanese-input | src/content/blog/ubuntu-japanese-input.md（予定） | 未定 | Ubuntu入門シリーズ第7回 / 下書き: content/drafts/blog/B018-ubuntu-japanese-input.md |
 | B019 | Ubuntuのターミナル基本操作：最初に覚えたい使い方を初心者向けに解説 | ブログ | 修正待ち | Human | 人間確認待ち（公開前最終確認） | ubuntu-terminal-basics | src/content/blog/ubuntu-terminal-basics.md（予定） | 未定 | Ubuntu入門シリーズ第8回 / 下書き: content/drafts/blog/B019-ubuntu-terminal-basics.md |
 | B020 | Ubuntuのメリット・デメリットを初心者向けに整理：導入前に知っておきたいこと | ブログ | 修正待ち | Human | 人間確認待ち（公開前最終確認） | ubuntu-pros-cons | src/content/blog/ubuntu-pros-cons.md（予定） | 未定 | Ubuntu入門シリーズ補完記事 / 下書き: content/drafts/blog/B020-ubuntu-pros-cons.md |
@@ -48,7 +48,8 @@
 |----|------------|------|------|-------------|------|-----------|--------|------|
 | X001 | （例）記事告知ツイート | 案出し | Codex → Claude Code | テンプレート作成 task を起こす | ブログ記事告知 | — | — | テンプレート登録待ち |
 | X002 | B015告知：BIOSが怖い…構成＋ロードマップスレッド | 公開済み | Human | アーカイブ管理のみ | ブログ記事告知 | content/drafts/x/X002-bios-usb-boot-announce.md | 2026-03-11 | 詳細: docs/editorial/x-post-log.md |
-| X003 | B016 告知投稿（作成待ち） | 案出し | Claude Code | 告知文の下書き作成 | ブログ記事告知 | content/drafts/x/X003-ubuntu-install-guide-announce.md | — | B016 の公開後に自動生成した task あり |
+| X003 | B016告知：インストール画面の「ディスクの使い方」解説 | 公開準備完了 | Human | 人間確認後に投稿 | ブログ記事告知 | content/drafts/x/X003-ubuntu-install-guide-announce.md | — | B016 の公開後に作成 / 下書き作成済み(260312) |
+| X004 | B017 告知投稿（作成待ち） | 案出し | Claude Code | 告知文の下書き作成 | ブログ記事告知 | content/drafts/x/X004-ubuntu-first-setup-announce.md | — | B017 の公開後に自動生成した task あり |
 
 ---
 
@@ -70,4 +71,5 @@
 | 修正待ち | 監査後、修正指摘あり |
 | 公開準備完了 | レビュー済み・投稿・公開可能な状態 |
 | 公開済み | 実際に公開・投稿が完了した状態 |
+
 
