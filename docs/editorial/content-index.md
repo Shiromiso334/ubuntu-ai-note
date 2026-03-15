@@ -16,7 +16,7 @@
 | B016 | Ubuntuのインストール手順：インストール画面で迷わないための完全ガイド | ブログ | 公開済み | Human | アーカイブ管理のみ | ubuntu-install-guide | src/content/blog/ubuntu-install-guide.md | 2026-03-12 | Ubuntu入門シリーズ第5回 / 下書き: content/drafts/blog/B016-ubuntu-install-guide.md / レビュー修正完了(260312) / 公開反映済み(2026-03-12) |
 | B017 | Ubuntuインストール直後に最初に確認したい初回セットアップ項目 | ブログ | 公開済み | Human | アーカイブ管理のみ | ubuntu-first-setup | src/content/blog/ubuntu-first-setup.md | 2026-03-14 | Ubuntu入門シリーズ第6回 / 下書き: content/drafts/blog/B017-ubuntu-first-setup.md / 公開反映済み(2026-03-14) |
 | B018 | Ubuntuで日本語入力を使う方法：最初に確認したい設定を初心者向けに解説 | ブログ | 公開済み | Human | アーカイブ管理のみ | ubuntu-japanese-input | src/content/blog/ubuntu-japanese-input.md | 2026-03-15 | Ubuntu入門シリーズ第7回 / 下書き: content/drafts/blog/B018-ubuntu-japanese-input.md / 公開反映済み(2026-03-15) |
-| B019 | Ubuntuのターミナル基本操作：最初に覚えたい使い方を初心者向けに解説 | ブログ | 修正待ち | Human | 人間確認待ち（公開前最終確認） | ubuntu-terminal-basics | src/content/blog/ubuntu-terminal-basics.md（予定） | 未定 | Ubuntu入門シリーズ第8回 / 下書き: content/drafts/blog/B019-ubuntu-terminal-basics.md |
+| B019 | Ubuntuのターミナル基本操作：最初に覚えたい使い方を初心者向けに解説 | ブログ | 公開済み | Human | アーカイブ管理のみ | ubuntu-terminal-basics | src/content/blog/ubuntu-terminal-basics.md | 2026-03-15 | Ubuntu入門シリーズ第8回 / 下書き: content/drafts/blog/B019-ubuntu-terminal-basics.md / 公開反映済み(2026-03-15) |
 | B020 | Ubuntuのメリット・デメリットを初心者向けに整理：導入前に知っておきたいこと | ブログ | 修正待ち | Human | 人間確認待ち（公開前最終確認） | ubuntu-pros-cons | src/content/blog/ubuntu-pros-cons.md（予定） | 未定 | Ubuntu入門シリーズ補完記事 / 下書き: content/drafts/blog/B020-ubuntu-pros-cons.md |
 | B021 | UbuntuでWi-Fiが繋がらないときの対処法を初心者向けに整理 | ブログ | 修正待ち | Human | 人間確認待ち（公開前最終確認） | ubuntu-wifi-trouble | src/content/blog/ubuntu-wifi-trouble.md（予定） | 未定 | Ubuntu運用トラブル / 下書き: content/drafts/blog/B021-ubuntu-wifi-trouble.md / 監査前整形済み(260312) |
 | B022 | Ubuntuのアップデート基本：最初に知っておきたい更新のやり方 | ブログ | 修正待ち | Human | 人間確認待ち（公開前最終確認） | ubuntu-update-basics | src/content/blog/ubuntu-update-basics.md（予定） | 未定 | Ubuntu運用基本 / 下書き: content/drafts/blog/B022-ubuntu-update-basics.md / 監査前整形済み(260312) |
@@ -50,7 +50,8 @@
 | X002 | B015告知：BIOSが怖い…構成＋ロードマップスレッド | 公開済み | Human | アーカイブ管理のみ | ブログ記事告知 | content/drafts/x/X002-bios-usb-boot-announce.md | 2026-03-11 | 詳細: docs/editorial/x-post-log.md |
 | X003 | B016告知：インストール画面の「ディスクの使い方」解説 | 公開準備完了 | Human | 人間確認後に投稿 | ブログ記事告知 | content/drafts/x/X003-ubuntu-install-guide-announce.md | — | B016 の公開後に作成 / 下書き作成済み(260312) |
 | X004 | B017告知：インストール後「次に何をすればいい？」確認項目まとめ | 公開準備完了 | Human | 人間確認後に投稿 | ブログ記事告知 | content/drafts/x/X004-ubuntu-first-setup-announce.md | — | B017 の公開後に自動生成した task あり / 下書き作成済み(260314) |
-| X005 | B018 告知投稿（作成待ち） | 案出し | Claude Code | 告知文の下書き作成 | ブログ記事告知 | content/drafts/x/X005-ubuntu-japanese-input-announce.md | — | B018 の公開後に自動生成した task あり |
+| X005 | B018告知：日本語入力（Mozc）設定確認と切り替えキーまとめ | 公開準備完了 | Human | 人間確認後に投稿 | ブログ記事告知 | content/drafts/x/X005-ubuntu-japanese-input-announce.md | — | B018 の公開後に自動生成した task あり / 下書き作成済み(260315) |
+| X006 | B019 告知投稿（作成待ち） | 案出し | Claude Code | 告知文の下書き作成 | ブログ記事告知 | content/drafts/x/X006-ubuntu-terminal-basics-announce.md | — | B019 の公開後に自動生成した task あり |
 
 ---
 
@@ -72,6 +73,7 @@
 | 修正待ち | 監査後、修正指摘あり |
 | 公開準備完了 | レビュー済み・投稿・公開可能な状態 |
 | 公開済み | 実際に公開・投稿が完了した状態 |
+
 
 
 
